@@ -23,7 +23,7 @@ Selamat datang di Varnime, sebuah website streaming anime sederhana yang dibuat 
 - **Framework**: [Next.js](https://nextjs.org/) (App Router)
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/)
 - **Deployment**: [Vercel](https://vercel.com/)
-- **API**: Anime API oleh [Sankavollerei](https://github.com/SankaOfficial)
+- **API**: Anime API oleh [Sankavollerei](https://www.sankavollerei.com/)
 
 ---
 
