@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Varnime 🍿
 
-## Getting Started
+Selamat datang di Varnime, sebuah website streaming anime sederhana yang dibuat dengan Next.js dan ditenagai oleh API publik dari Sankavollerei. Proyek ini menampilkan antarmuka yang bersih, modern, dan responsif untuk menjelajahi dan menemukan anime.
 
-First, run the development server:
+![Screenshot Halaman Utama Proyek Varnime](https://cihuy.biz.id/file/ZlQ95EeX.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ Fitur Utama
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- **Navigasi Lengkap**: Jelajahi anime berdasarkan rilis terbaru, status (ongoing/completed), genre, dan jadwal rilis harian.
+- **Pencarian Cepat**: Temukan anime favoritmu dengan fungsi pencarian yang instan.
+- **Halaman Detail Informatif**: Lihat sinopsis, rating, detail teknis, dan daftar episode untuk setiap anime.
+- **Halaman Streaming**: Nonton langsung dari web dengan video player terintegrasi, lengkap dengan pilihan server dan kualitas.
+- **Desain Responsif**: Tampilan yang dioptimalkan untuk pengalaman terbaik di desktop maupun mobile.
+- **Loading State**: Transisi halaman yang mulus dengan indikator loading saat mengambil data.
+- **Halaman 404 Kustom**: Halaman error yang ramah pengguna dan sesuai tema.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🛠️ Teknologi yang Digunakan
 
-To learn more about Next.js, take a look at the following resources:
+- **Framework**: [Next.js](https://nextjs.org/) (App Router)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Deployment**: [Vercel](https://vercel.com/)
+- **API**: Anime API oleh [Sankavollerei](https://github.com/SankaOfficial)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🚀 Cara Menjalankan Proyek Secara Lokal
 
-## Deploy on Vercel
+Ikuti langkah-langkah berikut untuk menjalankan proyek ini di komputermu.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Prasyarat
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [Node.js](https://nodejs.org/) (versi 18.x atau lebih baru)
+- npm atau yarn
+
+### Instalasi
+
+1.  **Clone repositori ini:**
+    ```bash
+    git clone https://github.com/RazanMuhammadIkhsan/Varnime.git
+    cd Varnime
+    ```
+
+2.  **Install semua dependensi:**
+    ```bash
+    npm install
+    ```
+
+3.  **Jalankan server development:**
+    ```bash
+    npm run dev
+    ```
+
+4.  Buka browser dan akses [http://localhost:3000](http://localhost:3000) untuk melihat hasilnya.
