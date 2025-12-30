@@ -13,7 +13,7 @@ export const Config = {
   // URL untuk logo
   logo: "https://cihuy.biz.id/file/TWZWP3YS.jpg",
 
-  donateLink: "https://qris.zone.id/noku?amount=1000&note=Nih%20Buat%20Beli%20Kuota",
+  donateLink: "",
 
   pages: {
     notFound: {
