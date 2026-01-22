@@ -1,17 +1,32 @@
 #comment-section {
-  margin: 25px 0;
+  margin-top: 30px;
   padding: 15px;
   background: #111;
-  border-radius: 12px;
-  color: white;
+  color: #fff;
+  border-radius: 8px;
 }
 
-#comment-section input {
-  width: 100%;
-  margin-bottom: 6px;
-  padding: 8px;
-  border-radius: 8px;
-  background: #1a1a1a;
-  color: white;
-  border: none;
+#comment-list {
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+.comment-item {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+#comment-form {
+  display: flex;
+  gap: 5px;
+}
+
+#comment-form input {
+  flex: 1;
+  padding: 6px;
+}
+
+#comment-form button {
+  padding: 6px 12px;
 }
