@@ -1,34 +1,22 @@
-<html>
-<head>
-  ...
-</head>
+<!-- VIDEO PLAYER -->
+<video id="player" controls width="100%">
+  <source src="video.mp4" type="video/mp4">
+</video>
 
-<body>
+<!-- ===== KOMENTAR SECTION (DI BAWAH VIDEO) ===== -->
+<section id="comment-section">
+  <h3>Komentar</h3>
 
-  <!-- VIDEO PLAYER -->
-  <div class="video-player">...</div>
+  <div id="comment-list"></div>
 
-  <!-- TOMBOL PINK / LINK DOWNLOAD -->
-  <div class="episode-actions pink">...</div>
+  <form id="comment-form">
+    <input type="text" id="username" placeholder="Nama" required />
+    <input type="text" id="message" placeholder="Tulis komentar..." required />
+    <button type="submit">Kirim</button>
+  </form>
+</section>
 
-  <!-- EPISODE LAINNYA -->
-  <div class="episode-list">...</div>
-
-  <!-- 🔽 KOMENTAR TARO DI SINI 🔽 -->
-  <section id="comment-section">
-    <h3>💬 Komentar</h3>
-    <div id="comment-list"></div>
-
-    <div class="comment-box">
-      <input id="username" placeholder="Nama kamu..." />
-      <input id="message" placeholder="Tulis komentar..." />
-      <button id="send">Kirim</button>
-    </div>
-  </section>
-
-  <!-- 🔽 SCRIPT TARO DI SINI (PALING BAWAH) 🔽 -->
-  <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
-  <script src="/assets/js/comments.js"></script>
-
+<!-- SOCKET -->
+<script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+<script src="/assets/js/comments.js"></script>
 </body>
-</html>
