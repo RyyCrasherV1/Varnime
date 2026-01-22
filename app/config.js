@@ -11,7 +11,7 @@ export const Config = {
   description: "ZhouuXOrv adalah situs anime gratis tanpa iklan untuk menonton anime gratis",
 
   // URL untuk logo
-  logo: "https://www.catbox.to/pUBv5ZfsKMJtOfA/preview",
+  logo: "https://www.catbox.to/IrnKxIlGGLLEwUp/preview",
 
   donateLink: "",
 
