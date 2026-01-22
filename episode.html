@@ -1,67 +1,41 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <title>Episode</title>
+<meta charset="UTF-8">
+<title>Episode</title>
 
-  <!-- Google Login -->
-  <script src="https://accounts.google.com/gsi/client" async defer></script>
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+<script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
 
-  <style>
-    #comment-section {
-      margin-top: 40px;
-      padding: 20px;
-      background: #0f172a;
-      border-radius: 12px;
-      color: white;
-    }
-    .comment { margin-bottom: 10px; }
-    .title { color: #facc15; margin-left: 6px; }
-  </style>
+<style>
+body{background:#0b0b0b;color:#fff;font-family:sans-serif}
+.comment{border-bottom:1px solid #333;padding:8px}
+.title{color:#ff5fa2;margin-left:6px;font-size:12px}
+</style>
 </head>
 
 <body>
 
-  <!-- VIDEO -->
-  <video controls width="100%">
-    <source src="video.mp4" type="video/mp4">
-  </video>
+<!-- VIDEO -->
+<video src="video.mp4" controls width="100%"></video>
 
-  <!-- LOGIN -->
-  <div id="login-box" style="margin-top:20px;">
-    <div
-      id="g_id_onload"
-      data-client_id="ISI_CLIENT_ID_GOOGLE"
-      data-callback="onGoogleLogin">
-    </div>
-    <div class="g_id_signin"></div>
-  </div>
+<hr>
 
-  <!-- KOMENTAR -->
-  <section id="comment-section">
-    <h3>💬 Komentar Episode</h3>
+<!-- LOGIN -->
+<div id="login"></div>
 
-    <div id="comment-list"></div>
+<!-- KOMENTAR -->
+<h3>Komentar</h3>
 
-    <form id="comment-form">
-      <input id="message" placeholder="Tulis komentar..." required>
-      <button>Kirim</button>
-    </form>
-  </section>
+<div id="comment-list"></div>
 
-  <!-- ADMIN PANEL -->
-  <section id="admin-panel" style="display:none;">
-    <h3>🛠 Admin Panel</h3>
-    <input id="targetUser" placeholder="Email user">
-    <input id="newTitle" placeholder="Title baru">
-    <button id="setTitleBtn">Set Title</button>
-  </section>
+<form id="comment-form">
+  <input id="message" placeholder="Tulis komentar..." required>
+  <button>Kirim</button>
+</form>
 
-  <!-- SCRIPT -->
-  <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
-  <script src="/assets/js/auth.js"></script>
-  <script src="/assets/js/comments.js"></script>
-  <script src="/assets/js/admin.js"></script>
+<script src="/assets/js/auth.js"></script>
+<script src="/assets/js/comments.js"></script>
 
 </body>
 </html>
