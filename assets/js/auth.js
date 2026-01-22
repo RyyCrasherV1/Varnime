@@ -1,20 +1,21 @@
 let currentUser = null;
 
-function onGoogleLogin(res) {
-  const p = JSON.parse(atob(res.credential.split(".")[1]));
+window.onload = () => {
+  google.accounts.id.initialize({
+    client_id: "ISI_GOOGLE_CLIENT_ID_KAMU",
+    callback: res => {
+      const data = JSON.parse(atob(res.credential.split(".")[1]));
+      currentUser = {
+        name: data.name,
+        email: data.email
+      };
+      document.getElementById("login").innerText =
+        "Login sebagai " + currentUser.name;
+    }
+  });
 
-  currentUser = {
-    name: p.name,
-    email: p.email,
-    avatar: p.picture
-  };
-
-  document.getElementById("login-box").innerHTML = `
-    <img src="${p.picture}" width="32" style="border-radius:50%">
-    <b>${p.name}</b>
-  `;
-
-  socket.emit("login", currentUser);
-
-  if (typeof checkAdmin === "function") checkAdmin();
-}
+  google.accounts.id.renderButton(
+    document.getElementById("login"),
+    { theme: "outline", size: "large" }
+  );
+};
