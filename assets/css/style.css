@@ -1,0 +1,17 @@
+#comment-section {
+  margin: 25px 0;
+  padding: 15px;
+  background: #111;
+  border-radius: 12px;
+  color: white;
+}
+
+#comment-section input {
+  width: 100%;
+  margin-bottom: 6px;
+  padding: 8px;
+  border-radius: 8px;
+  background: #1a1a1a;
+  color: white;
+  border: none;
+}
