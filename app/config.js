@@ -3,22 +3,22 @@ export const Api = "https://www.sankavollerei.com/anime/samehadaku"
 
 export const Config = {
   // Nama website Anda, akan muncul di Hero Section dan judul tab browser
-  name: "Varnime",
-  name2: "Varnime - Nonton Anime Gratis",
-  author: "Zann",
+  name: "ZhouuXOrv",
+  name2: "ZhouuEncReyy - Nonton Anime Gratis Dari Rey",
+  author: "Reyy",
 
   // Deskripsi singkat website Anda
-  description: "Varnime adalah situs anime gratis tanpa iklan untuk menonton anime gratis",
+  description: "ZhouuXOrv adalah situs anime gratis tanpa iklan untuk menonton anime gratis",
 
   // URL untuk logo
-  logo: "https://cihuy.biz.id/file/TWZWP3YS.jpg",
+  logo: "https://www.catbox.to/pUBv5ZfsKMJtOfA/preview",
 
   donateLink: "",
 
   pages: {
     notFound: {
-      title: "Wah, Tersesat di Isekai? 🗺️",
-      logo: "https://cihuy.biz.id/file/_xbA5BeZ.png",
+      title: "Wah, Tersesat di dunia orv? 🗺️",
+      logo: "https://www.catbox.to/NtWwes9LzayaDFO/preview",
       description: "Halaman yang kamu cari sepertinya tidak ada di dimensi ini. Ayo kembali ke jalan yang benar!"
     },
     Footer: {
