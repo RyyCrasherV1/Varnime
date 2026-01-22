@@ -1,0 +1,20 @@
+<h2>Admin Panel</h2>
+
+<input id="email" placeholder="email user">
+<select id="level">
+  <option>User</option>
+  <option>VIP</option>
+  <option>Admin</option>
+</select>
+<button onclick="set()">Set Level</button>
+
+<script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+<script>
+const socket = io("https://varnime-comment-server-production.up.railway.app");
+function set(){
+  socket.emit("setLevel", {
+    email: email.value,
+    level: level.value
+  });
+}
+</script>
