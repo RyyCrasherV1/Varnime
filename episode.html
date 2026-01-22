@@ -1,33 +1,43 @@
-<!-- VIDEO PLAYER -->
-<video id="player" controls width="100%">
-  <source src="video.mp4" type="video/mp4">
-</video>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Episode</title>
+</head>
 
-<!-- ===== KOMENTAR SECTION (DI BAWAH VIDEO) ===== -->
-<section id="comment-section">
-  <h3>Komentar</h3>
+<body>
 
-  <div id="comment-list"></div>
+  <!-- VIDEO PLAYER -->
+  <video id="player" controls width="100%">
+    <source src="video.mp4" type="video/mp4" />
+  </video>
 
-  <form id="comment-form">
-    <input type="text" id="username" placeholder="Nama" required />
-    <input type="text" id="message" placeholder="Tulis komentar..." required />
-    <button type="submit">Kirim</button>
-  </form>
-</section>
+  <!-- ===== KOMENTAR (DI BAWAH VIDEO) ===== -->
+  <section id="comment-section">
+    <h3>Komentar</h3>
 
-<!-- SOCKET -->
-<script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
-<script src="/assets/js/comments.js"></script>
+    <div id="comment-list"></div>
+
+    <form id="comment-form">
+      <input type="text" id="username" placeholder="Nama" required />
+      <input type="text" id="message" placeholder="Tulis komentar..." required />
+      <button type="submit">Kirim</button>
+    </form>
+  </section>
+
+  <!-- ===== ADMIN PANEL (HIDDEN) ===== -->
+  <section id="admin-panel" style="display:none;">
+    <h3>🛠️ Admin Panel</h3>
+
+    <input id="targetUser" placeholder="Email user" />
+    <input id="newTitle" placeholder="Title baru" />
+    <button id="setTitleBtn">Set Title</button>
+  </section>
+
+  <!-- SOCKET -->
+  <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+  <script src="/assets/js/comments.js"></script>
+  <script src="/assets/js/admin.js"></script>
+
 </body>
-
-<!-- ADMIN PANEL (HIDDEN) -->
-<section id="admin-panel" style="display:none;">
-  <h3>🛠️ Admin Panel</h3>
-
-  <input id="targetUser" placeholder="Email user" />
-  <input id="newTitle" placeholder="Title baru" />
-  <button id="setTitleBtn">Set Title</button>
-</section>
-
-<script src="/assets/js/admin.js"></script>
+</html>
