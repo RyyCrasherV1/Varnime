@@ -1,41 +1,65 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Episode</title>
+
+  <!-- Google Login -->
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+
+  <style>
+    #comment-section {
+      margin-top: 40px;
+      padding: 20px;
+      background: #0f172a;
+      border-radius: 12px;
+      color: white;
+    }
+    .comment { margin-bottom: 10px; }
+    .title { color: #facc15; margin-left: 6px; }
+  </style>
 </head>
 
 <body>
 
-  <!-- VIDEO PLAYER -->
-  <video id="player" controls width="100%">
-    <source src="video.mp4" type="video/mp4" />
+  <!-- VIDEO -->
+  <video controls width="100%">
+    <source src="video.mp4" type="video/mp4">
   </video>
 
-  <!-- ===== KOMENTAR (DI BAWAH VIDEO) ===== -->
+  <!-- LOGIN -->
+  <div id="login-box" style="margin-top:20px;">
+    <div
+      id="g_id_onload"
+      data-client_id="ISI_CLIENT_ID_GOOGLE"
+      data-callback="onGoogleLogin">
+    </div>
+    <div class="g_id_signin"></div>
+  </div>
+
+  <!-- KOMENTAR -->
   <section id="comment-section">
-    <h3>Komentar</h3>
+    <h3>💬 Komentar Episode</h3>
 
     <div id="comment-list"></div>
 
     <form id="comment-form">
-      <input type="text" id="username" placeholder="Nama" required />
-      <input type="text" id="message" placeholder="Tulis komentar..." required />
-      <button type="submit">Kirim</button>
+      <input id="message" placeholder="Tulis komentar..." required>
+      <button>Kirim</button>
     </form>
   </section>
 
-  <!-- ===== ADMIN PANEL (HIDDEN) ===== -->
+  <!-- ADMIN PANEL -->
   <section id="admin-panel" style="display:none;">
-    <h3>🛠️ Admin Panel</h3>
-
-    <input id="targetUser" placeholder="Email user" />
-    <input id="newTitle" placeholder="Title baru" />
+    <h3>🛠 Admin Panel</h3>
+    <input id="targetUser" placeholder="Email user">
+    <input id="newTitle" placeholder="Title baru">
     <button id="setTitleBtn">Set Title</button>
   </section>
 
-  <!-- SOCKET -->
+  <!-- SCRIPT -->
   <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+  <script src="/assets/js/auth.js"></script>
   <script src="/assets/js/comments.js"></script>
   <script src="/assets/js/admin.js"></script>
 
