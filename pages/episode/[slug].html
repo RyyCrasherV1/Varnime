@@ -1,0 +1,16 @@
+<section id="comment-section">
+  <h3>💬 Komentar Episode</h3>
+
+  <input id="username" placeholder="Username">
+  <input id="token" placeholder="Token (admin/owner opsional)">
+  <button onclick="login()">Login</button>
+
+  <div id="commentBox" style="display:none">
+    <input id="msg" placeholder="Tulis komentar...">
+    <button onclick="send()">Kirim</button>
+  </div>
+
+  <ul id="comments"></ul>
+</section>
+
+<script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
